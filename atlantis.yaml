@@ -12,14 +12,9 @@ projects:
   dir: .
   workspace: default
   terraform_version: v0.11.0
-  repo_locking: true # deprecated: use repo_locks instead
-  repo_locks:
-    mode: on_plan
-  custom_policy_check: false
   autoplan:
     when_modified: ["*.tf", "../modules/**/*.tf", ".terraform.lock.hcl"]
     enabled: true
-  silence_pr_comments: ["apply"]
   execution_order_group: 1
   depends_on:
     - project-1
@@ -42,4 +37,3 @@ workflows:
 allowed_regexp_prefixes:
 - dev/
 - staging/
-
