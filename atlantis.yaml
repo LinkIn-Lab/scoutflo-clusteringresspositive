@@ -19,6 +19,8 @@ projects:
   execution_order_group: 1
   depends_on:
     - project-1
+repoConfig: "---\n  repos:\n  - id: /.*/\n    allowed_overrides: [workflow, apply_requirements, plan_requirements, import_requirements, delete_source_branch_on_merge, repo_locking, repo_locks, policy_check, custom_policy_check, silence_pr_comments]\n    allow_custom_workflows: true\n",
+
 workflows:
   myworkflow:
     plan:
