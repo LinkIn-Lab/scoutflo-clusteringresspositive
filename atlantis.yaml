@@ -27,7 +27,6 @@ projects:
   execution_order_group: 1
   depends_on:
     - project-1
-  workflow: myworkflow
 workflows:
   myworkflow:
     plan:
