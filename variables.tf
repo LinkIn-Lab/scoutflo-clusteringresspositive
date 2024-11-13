@@ -32,5 +32,5 @@ default = 5
   variable "desired_size" {
     description = "Desired number of nodes"
 type = number
-default = 3
+default = 2
   }
